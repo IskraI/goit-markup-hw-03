@@ -28,6 +28,7 @@ body {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
+h2,
 h3,
 h4,
 ul,
@@ -37,6 +38,7 @@ p {
 }
 img {
 	display: block;
+	max-width: 100%;
 }
 header {
 	border-bottom: 1px solid var(--line-color);
@@ -329,33 +331,26 @@ header {
 }
 
 .portfolio-list .item {
-	padding-bottom: 20px;
 	margin-top: 30px;
 	margin-left: 30px;
-	border: 1px solid var(--border-color); /*рамки на карточках*/
 	width: 370px;
 }
-.portfolio-list .item:nth-child(3n) {
-	margin-right: 0px;
-}
 
-.portfolio-list .portfolio-img {
-	border-bottom: 1px solid var(--border-color); /*рамки на карточках*/
-}
 .portfolio-list .title {
-	margin-top: 20px;
-	margin-bottom: 4px;
-	margin-left: 24px;
-	margin-right: 24px;
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: var(--title-text-color);
 }
 .portfolio-list .dscr {
-	margin-left: 24px;
-	margin-right: 24px;
+	margin-top: 4px;
 	font-size: 16px;
 	line-height: 1.88;
 	color: var(--text-color);
+}
+.portfolio-content {
+	padding: 20px 24px;
+	border-bottom: 1px solid var(--border-color);
+	border-left: 1px solid var(--border-color);
+	border-right: 1px solid var(--border-color);
 }
