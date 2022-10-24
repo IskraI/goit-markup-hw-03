@@ -331,7 +331,7 @@ button {
 	color: var(--main-color);
 	background-color: var(--accent-color);
 }
-/*коллекция*/
+/*PORTFOLIO LIST*/
 /*отступ реализован с помощью отрицаетльного маржина*/
 .portfolio-list {
 	display: flex;
