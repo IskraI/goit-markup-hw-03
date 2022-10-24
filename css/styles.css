@@ -19,15 +19,7 @@ body {
 	color: var(--text-color);
 	background-color: var(--main-color);
 }
-.container {
-	width: 1200px;
-	padding: 0 15px;
-	margin: 0 auto;
-}
-.section {
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
+
 h2,
 h3,
 h4,
@@ -39,16 +31,35 @@ p {
 img {
 	display: block;
 	max-width: 100%;
+	height: auto; /*правка*/
 }
 header {
 	border-bottom: 1px solid var(--line-color);
+}
+button {
+	display: block;
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+}
+.container {
+	width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
 .link {
 	text-decoration: none;
 }
 .list {
 	list-style: none;
+	padding-left: 0;
+	padding-right: 0;
 }
+
 /* логотип  */
 .logo.link {
 	font-family: "Raleway", sans-serif;
@@ -105,7 +116,11 @@ header {
 }
 
 /*секция герой*/
-
+.hero {
+	background-color: var(--brand-color);
+	text-align: center;
+	padding: 200px 0;
+}
 .hero-title {
 	margin-top: 0px;
 	margin-bottom: 30px;
@@ -121,29 +136,21 @@ header {
 }
 .hero-btn {
 	margin: auto;
-	width: 216px;
-	height: 50px;
+	padding: 10px 32px;
+	min-width: 216px;
 	font-family: "Roboto", sans-serif;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
 	letter-spacing: 0.06em;
 	color: var(--main-color);
-
 	align-items: center;
 	text-align: center;
 	background-color: var(--accent-color);
-	border-color: transparent;
-	border-radius: 4px;
-	cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
 	background-color: var(--button-active);
-}
-.hero {
-	background-color: var(--brand-color);
-	text-align: center;
 }
 
 /*секции*/
@@ -222,18 +229,17 @@ header {
 }
 .team-list {
 	display: flex;
-	justify-content: space-between;
+	gap: 30px;
 }
 .team-list .item {
-	padding-bottom: 30px;
-	text-align: center;
 	background-color: var(--main-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
 }
-.team-list .item:not(:first-child) {
+/* .team-list .item:not(:first-child) {
 	margin-left: 30px;
-}
+} */
 .team-list .title {
-	margin-top: 30px;
 	margin-bottom: 10px;
 	font-weight: 500;
 	font-size: 16px;
@@ -247,14 +253,19 @@ header {
 	line-height: 1.19;
 	text-align: center;
 }
+.team-card {
+	padding: 30px 0;
+}
 /*футер*/
 .footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
-
 	background-color: var(--brand-color);
 }
 
+.adress-list .item + .item {
+	margin-top: 9px;
+}
 .adress-list {
 	font-style: normal;
 	line-height: 1.71;
@@ -325,7 +336,6 @@ header {
 .portfolio-list {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 0;
 	margin-top: -30px;
 	margin-left: -30px;
 }
